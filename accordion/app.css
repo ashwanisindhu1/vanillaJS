@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.accordionWrapper {
+  margin: 10vh;
+}
+
+.accordionItemContent {
+    background-color: lightgoldenrodyellow;
+}
+
+.accordionItemContent.closed {
+  display: none;
+}
+
+.accordionItemContent.open {
+  border: 1px solid #ddd;
+  height: 200px;
+}
+
+.accordionItem {
+  padding-bottom: 5px;
+  margin: 0 5px 5px 5px;
+}
+
+.accordionItem h3 {
+  background-color: #333;
+  color: white;
+  padding: 10px 0 10px 10px;
+  font-size: bold;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+}
+
+.accordionItem p {
+  padding: 5px;
+}
