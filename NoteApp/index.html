@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tooltip example</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>My Notes</h2>
+      <div id="all-notes" class="notes">
+        <div class="new-note" id="add-new-note">
+          <h3>+ Add new</h3>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close-button" id="close-modal-btn">&times;</span>
+        <!-- <div> -->
+        <h2 id="new-note-modal-heading">Add new note</h2>
+        <span class="selectColorText">Select a color:</span>
+        <input type="hidden" id="noteColor" value="lightpink"/>
+        <ul class="allColorOptions">
+          <li><div class="colorOption selected" style="background-color: lightpink" id="color-lightpink"></div></li>
+          <li><div class="colorOption" style="background-color: lightblue" id="color-lightblue"></div></li>
+          <li><div class="colorOption" style="background-color: lightgreen" id="color-lightgreen"></div></li>
+          <li><div class="colorOption" style="background-color: lightsalmon" id="color-lightsalmon"></div></li>
+          <li><div class="colorOption" style="background-color: lightcoral" id="color-lightcoral"></div></li>
+        </ul>
+        <input type="hidden" id="noteId" />
+        <input type="text" id="new-note-title" placeholder="Enter title here" />
+        <textarea
+          rows="5"
+          cols="10"
+          id="new-note-description"
+          placeholder="Enter description here"
+        ></textarea>
+        <button id="new-note-save">Add</button>
+        <button id="new-note-cancel">Cancel</button>
+        <!-- </div> -->
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

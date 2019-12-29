@@ -1,0 +1,136 @@
+.container > h2 {
+  text-align: center;
+}
+
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 80px;
+}
+
+.new-note {
+  background-color: lightgray;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+}
+
+.new-note > h3 {
+  text-align: center;
+}
+
+.note {
+  flex-grow: 1;
+  background-color: lightpink;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 10px;
+  max-width: 200px;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+
+.modal-content > button {
+  background-color: green;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#new-note-cancel {
+  background-color: lightgray;
+}
+
+.modal-content > input {
+  display: block;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.modal-content > textarea {
+  width: 100%;
+  margin-bottom: 8px;
+  resize: none;
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+  margin: 2px;
+}
+
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.allColorOptions {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.allColorOptions > li {
+  cursor: pointer;
+}
+
+.colorOption {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+}
+
+.colorOption.selected {
+  border: 2px solid black;
+}
+
+.selectColorText {
+  font-size: 14px;
+}
